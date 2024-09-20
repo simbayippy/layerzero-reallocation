@@ -69,6 +69,9 @@ export default function Home() {
       <h1 className="text-2xl font-bold mb-4">
         LayerZero reallocation checker
       </h1>
+      <p className="text-sm text-gray-600 mb-4">
+        Batch checks 5 addresses every 7 seconds.
+      </p>
       <Textarea
         placeholder="Enter addresses (separated by commas or newlines)"
         value={addresses}
