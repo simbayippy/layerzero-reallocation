@@ -29,7 +29,7 @@ export default function Home() {
       .map((addr) => addr.trim())
       .filter(Boolean);
     const batchSize = 5; // Process 5 addresses at a time
-    const delay = 7000; // 2 second delay between batches
+    const delay = 7500; // 2 second delay between batches
 
     for (let i = 0; i < addressList.length; i += batchSize) {
       const batch = addressList.slice(i, i + batchSize);
@@ -70,7 +70,7 @@ export default function Home() {
         LayerZero reallocation checker
       </h1>
       <p className="text-sm text-gray-600 mb-4">
-        Batch checks 5 addresses every 7 seconds.
+        Batch checks 5 addresses every ~8 seconds.
       </p>
       <Textarea
         placeholder="Enter addresses (separated by commas or newlines)"
